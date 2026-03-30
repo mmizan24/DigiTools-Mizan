@@ -3,7 +3,7 @@ import { Share2, Globe, MessageSquare, Send } from 'lucide-react';
 
 export const Footer = () => {
   return (
-    <footer className="bg-slate-950 w-full pt-20 pb-10">
+    <footer className="bg-slate-950  mx-auto pt-20 pb-10">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto mb-20">
         <div>
           <div className="text-xl font-black text-white mb-8">DigiTools</div>
@@ -57,9 +57,16 @@ export const Footer = () => {
         </div>
       </div>
       
-      <div className="max-w-7xl mx-auto px-8 pt-10 border-t border-white/5 text-center">
-        <p className="text-slate-400 text-sm">© 2024 DigiTools Inc. All rights reserved.</p>
+      <div className=" flex justify-between max-w-7xl mx-auto px-8 pt-10 border-t border-white/5 text-center">
+        <p className="text-slate-400 text-sm">© 2026 Digitools. All rights reserved.</p>
+        <div className="flex gap-4">  
+          <p className="text-slate-400 hover:text-white transition-colors text-sm" href="#">Privacy Policy</p>
+          <p className="text-slate-400 hover:text-white transition-colors text-sm" href="#">Terms of Service</p>
+          <p className="text-slate-400 hover:text-white transition-colors text-sm" href="#">Cookies</p>
+
+        </div>
+
       </div>
     </footer>
   );
-};
+}; 

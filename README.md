@@ -44,4 +44,4 @@ DigiTools is a modern, high-performance digital tools marketplace designed for c
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the PG License.
