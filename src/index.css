@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import "react-toastify/dist/ReactToastify.css";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #702ae1;
+  --color-primary-dim: #6411d5;
+  --color-primary-container: #b28cff;
+  
+  --color-secondary: #7742a6;
+  --color-secondary-container: #e6c5ff;
+  
+  --color-tertiary: #9e3657;
+  --color-tertiary-container: #ff8eac;
+  
+  --color-background: #f6f6ff;
+  --color-surface: #f6f6ff;
+  --color-surface-container: #e2e7ff;
+  --color-surface-container-low: #eef0ff;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #d9e2ff;
+  --color-surface-container-highest: #d1dcff;
+  
+  --color-on-surface: #272e42;
+  --color-on-surface-variant: #535b71;
+  --color-on-primary: #f8f0ff;
+  --color-on-secondary: #fbefff;
+  --color-on-tertiary: #ffeff1;
+  
+  --color-inverse-surface: #060e20;
+  --color-error: #b41340;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "1",
+    "name": "AI Content Writer",
+    "description": "Generate high-quality blog posts and social media content in seconds.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["100+ templates", "SEO optimization", "Multi-language support"],
+    "icon": "PenTool"
+  },
+  {
+    "id": "2",
+    "name": "SEO Analyzer Pro",
+    "description": "Deep dive into your website's SEO performance and get actionable insights.",
+    "price": 49,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Keyword tracking", "Competitor analysis", "Weekly reports"],
+    "icon": "Search"
+  },
+  {
+    "id": "3",
+    "name": "Design Asset Pack",
+    "description": "A massive collection of icons, illustrations, and UI components.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["5000+ icons", "Vector format", "Free updates"],
+    "icon": "Palette"
+  },
+  {
+    "id": "4",
+    "name": "Social Media Scheduler",
+    "description": "Automate your social media presence across all major platforms.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited posts", "Analytics dashboard", "Team collaboration"],
+    "icon": "Calendar"
+  },
+  {
+    "id": "5",
+    "name": "Video Editor Cloud",
+    "description": "Edit high-resolution videos directly in your browser with AI assistance.",
+    "price": 199,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["4K export", "Cloud storage", "Stock library access"],
+    "icon": "Video"
+  },
+  {
+    "id": "6",
+    "name": "Email Marketing Suite",
+    "description": "Build and send beautiful email campaigns that convert.",
+    "price": 39,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["A/B testing", "Automation workflows", "Contact segmentation"],
+    "icon": "Mail"
+  },
+  {
+    "id": "7",
+    "name": "Code Snippet Manager",
+    "description": "Organize and share your code snippets with your team effortlessly.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Cloud sync", "Syntax highlighting", "Team sharing"],
+    "icon": "Code"
+  },
+  {
+    "id": "8",
+    "name": "Analytics Dashboard",
+    "description": "Real-time analytics for your SaaS or e-commerce business.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Custom metrics", "Data export", "Mobile app access"],
+    "icon": "BarChart"
+  }
+]
