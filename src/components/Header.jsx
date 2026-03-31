@@ -29,7 +29,7 @@ export const Header = ({ cartCount, activeTab, onTabChange }) => {
             >
               Products
             </button>
-            <a href="#steps" className="text-on-surface-variant hover:text-primary font-semibold transition-colors">How it Works</a>
+            <a href="#steps" className="text-on-surface-variant hover:text-primary font-semibold transition-colors">Features</a>
             <a href="#pricing" className="text-on-surface-variant hover:text-primary font-semibold transition-colors">Pricing</a>
 
             <div className="h-6 w-px bg-surface-container-high mx-4"></div>
@@ -52,6 +52,7 @@ export const Header = ({ cartCount, activeTab, onTabChange }) => {
           </div>
 
           {/* Mobile Menu Button */}
+          
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={() => onTabChange('cart')}

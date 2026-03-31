@@ -86,5 +86,17 @@
     "tagType": "best-seller",
     "features": ["Custom metrics", "Data export", "Mobile app access"],
     "icon": "BarChart"
+  },
+
+  {
+    "id": "9",
+    "name": "New",
+    "description": "Real-time analytics for your SaaS or e-commerce business.",
+    "price": 59,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "features": ["Custom metrics", "Data export", "Mobile app access"],
+    "icon": "Code"
   }
 ]

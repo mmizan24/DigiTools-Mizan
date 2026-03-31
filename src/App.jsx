@@ -13,18 +13,25 @@ import { CartView } from './components/CartView';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('products');
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    const savedCart = localStorage.getItem('digi-cart');
+    return savedCart ? JSON.parse(savedCart) : [];
+  });
 
-  // Smooth scroll to top when tab changes
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [activeTab]);
+    localStorage.setItem('digi-cart', JSON.stringify(cart));
+  }, [cart]);
+
+  // // Smooth scroll to top when tab changes
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, behavior: 'smooth' });
+  // }, [activeTab]);
 
   const handleAddToCart = (product) => {
     setCart(prev => {
       const existing = prev.find(item => item.id === product.id);
       if (existing) {
-        return prev.map(item => 
+        return prev.map(item =>
           item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
         );
       }
@@ -60,10 +67,10 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-background selection:bg-primary/30">
-      <Header 
-        cartCount={cartCount} 
-        activeTab={activeTab} 
-        onTabChange={setActiveTab} 
+      <Header
+        cartCount={cartCount}
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
       />
 
       <Hero />
@@ -75,21 +82,19 @@ export default function App() {
           <div className="inline-flex bg-surface-container p-1 rounded-xl shadow-sm border border-surface-container-high">
             <button
               onClick={() => setActiveTab('products')}
-              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                activeTab === 'products'
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${activeTab === 'products'
                   ? 'bg-primary text-white shadow-md'
                   : 'text-on-surface-variant hover:bg-surface-container-high'
-              }`}
+                }`}
             >
               Products
             </button>
             <button
               onClick={() => setActiveTab('cart')}
-              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${
-                activeTab === 'cart'
+              className={`px-8 py-3 rounded-lg font-semibold transition-all duration-300 ${activeTab === 'cart'
                   ? 'bg-primary text-white shadow-md'
                   : 'text-on-surface-variant hover:bg-surface-container-high'
-              }`}
+                }`}
             >
               Cart ({cartCount})
             </button>
@@ -98,18 +103,19 @@ export default function App() {
       </section>
 
       {activeTab === 'products' ? (
-        <ProductGrid 
-          onAddToCart={handleAddToCart} 
-          activeTab={activeTab} 
+        <ProductGrid
+          onAddToCart={handleAddToCart}
+          cart={cart} // <-- Pass the cart state here
+          activeTab={activeTab}
           onTabChange={setActiveTab}
           cartCount={cartCount}
         />
       ) : (
-        <CartView 
-          items={cart} 
-          onRemove={handleRemoveFromCart} 
+        <CartView
+          items={cart}
+          onRemove={handleRemoveFromCart}
           onCheckout={handleCheckout}
-          onTabChange={setActiveTab} 
+          onTabChange={setActiveTab}
         />
       )}
 

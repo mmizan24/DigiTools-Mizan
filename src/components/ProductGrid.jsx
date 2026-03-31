@@ -7,7 +7,7 @@ const iconMap = {
   PenTool, Search, Palette, Calendar, Video, Mail, Code, BarChart
 };
 
-export function ProductGrid({ onAddToCart }) {
+export function ProductGrid({ onAddToCart, cart = [] }) {
   const [addedIds, setAddedIds] = useState(new Set());
 
   const handleAdd = (product) => {
@@ -40,7 +40,7 @@ export function ProductGrid({ onAddToCart }) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {productsData.map((product) => {
           const IconComponent = iconMap[product.icon] || Star;
-          const isAdded = addedIds.has(product.id);
+          const isAdded = cart.some(item => item.id === product.id);
 
           return (
             <motion.div

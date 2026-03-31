@@ -5,10 +5,10 @@ export function Hero() {
   return (
     <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-surface">
       {/* Background Accents */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
+       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full pointer-events-none">
         <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-primary/5 rounded-full blur-[120px]"></div>
         <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-secondary/5 rounded-full blur-[120px]"></div>
-      </div>
+      </div> 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -67,10 +67,10 @@ export function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.2 }}
-            className="relative"
+            // initial={{ opacity: 0, scale: 0.9 }}
+            // animate={{ opacity: 1, scale: 1 }}
+            // transition={{ duration: 1, delay: 0.2 }}
+            // className="relative"
           >
             <div className="relative z-10 rounded-[2.5rem] overflow-hidden shadow-2xl shadow-primary/10 border-8 border-white">
               <img className='w-full h-auto' src="/src/assets/banner.png" alt="" />
@@ -78,11 +78,11 @@ export function Hero() {
 
             {/* Floating Elements */}
             <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute -top-10 -right-10 z-20 bg-white p-6 rounded-3xl shadow-xl border border-surface-container-high hidden md:block"
+              // animate={{ y: [0, -20, 0] }}
+              // transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+              // className="absolute -top-10 -right-10 z-20 bg-white p-6 rounded-3xl shadow-xl border border-surface-container-high hidden md:block"
             >
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-green-100 rounded-2xl flex items-center justify-center">
                   <ArrowRight className="text-green-600 w-6 h-6 rotate-[-45deg]" />
                 </div>
@@ -90,15 +90,15 @@ export function Hero() {
                   <p className="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Efficiency</p>
                   <p className="text-xl font-black text-on-surface">+145%</p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
 
             <motion.div
-              animate={{ y: [0, 20, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute -bottom-10 -left-10 z-20 bg-white p-6 rounded-3xl shadow-xl border border-surface-container-high hidden md:block"
+              // animate={{ y: [0, 20, 0] }}
+              // transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+              // className="absolute -bottom-10 -left-10 z-20 bg-white p-6 rounded-3xl shadow-xl border border-surface-container-high hidden md:block"
             >
-              <div className="flex items-center gap-4">
+              {/* <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-primary/10 rounded-2xl flex items-center justify-center">
                   <Star className="text-primary w-6 h-6 fill-current" />
                 </div>
@@ -106,7 +106,7 @@ export function Hero() {
                   <p className="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Rating</p>
                   <p className="text-xl font-black text-on-surface">4.9/5.0</p>
                 </div>
-              </div>
+              </div> */}
             </motion.div>
           </motion.div>
         </div>

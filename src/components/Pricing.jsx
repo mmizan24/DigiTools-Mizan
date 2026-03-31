@@ -25,7 +25,7 @@ export const Pricing = () => {
         </div>
 
         {/* Pro */}
-        <div className="bg-gradient-to-br from-primary to-primary-dim p-10 rounded-2xl text-on-primary shadow-2xl scale-105 z-10">
+        <div className="bg-linear-to-br from-primary to-primary-dim p-10 rounded-2xl text-on-primary shadow-2xl scale-105 z-10">
           <div className="inline-block px-3 py-1 rounded-full bg-white/20 text-[10px] font-black uppercase mb-4 tracking-widest">Most Popular</div>
           <div className="text-lg font-bold mb-2">Pro</div>
           <div className="text-4xl font-black mb-6">$29 <span className="text-base font-normal opacity-80">/mo</span></div>
