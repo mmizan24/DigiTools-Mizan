@@ -46,13 +46,13 @@ export const Header = ({ cartCount, activeTab, onTabChange }) => {
               )}
             </button>
 
-            <button className="bg-primary text-white px-6 py-2.5 rounded-xl font-bold hover:bg-primary-dim transition-all shadow-lg shadow-primary/20 active:scale-95">
+            <button className="bg-gradient-to-r from-violet-800 to-pink-500 text-white px-6 py-2.5 rounded-xl font-bold  transition-all shadow-lg shadow-primary/20 active:scale-95">
               Get Started
             </button>
           </div>
 
           {/* Mobile Menu Button */}
-          
+
           <div className="md:hidden flex items-center space-x-4">
             <button
               onClick={() => onTabChange('cart')}
@@ -90,7 +90,7 @@ export const Header = ({ cartCount, activeTab, onTabChange }) => {
               onClick={() => setIsMenuOpen(false)}
               className="block px-4 py-3 text-on-surface font-semibold hover:bg-surface-container rounded-xl"
             >
-              How it Works
+              Features
             </a>
             <a
               href="#pricing"

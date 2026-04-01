@@ -73,7 +73,7 @@ export default function App() {
         onTabChange={setActiveTab}
       />
 
-      <Hero />
+      <Hero onTabChange={setActiveTab} />
       <Stats />
 
       {/* Toggling Section */}
