@@ -28,9 +28,9 @@ DigiTools is a modern, high-performance digital tools marketplace designed for c
 1. **Clone the repository**:
    ```bash
    git clone https:git clone https://github.com/yourusername/digitools.git
-   Live server link : 
+   Live server link : https://mmizan24.github.io/DigiTools-Mizan/
    netlify link :https://digitools-mmizan24.netlify.app/
-   
+
    ```
 2. **Install dependencies**:
    ```bash
