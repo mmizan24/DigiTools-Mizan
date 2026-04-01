@@ -27,7 +27,8 @@ DigiTools is a modern, high-performance digital tools marketplace designed for c
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/digitools.git
+   git clone https:git clone https://github.com/yourusername/digitools.git
+   Live server link : 
    ```
 2. **Install dependencies**:
    ```bash
@@ -44,4 +45,4 @@ DigiTools is a modern, high-performance digital tools marketplace designed for c
 
 ## 📄 License
 
-This project is licensed under the PG License.
+This project is licensed under the ProgramimgHero License.
